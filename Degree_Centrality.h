@@ -1,2 +1,1 @@
-void readAdjList(vector <vector> Adjlist);
-void readFile (String Location);
+int Degree_Centrality(vector <vector<int>> &Adjlist);
