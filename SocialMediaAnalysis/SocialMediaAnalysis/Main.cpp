@@ -1,12 +1,13 @@
 #include <vector>
-#include <cstdio>
 #include <queue>
 #include <stack>
 #include <functional>
 #include <iostream>
 #include "Graph.h"
+#include <fstream>
 
-#define INF 1e9
+
+#define inf 1e9
 
 using namespace std;
 
@@ -34,7 +35,6 @@ Graph * readFile (const char* path , int &n ,int &m){
 	}
 	return G1;
 }
-
 
 
 int main () {
@@ -70,6 +70,13 @@ int main () {
 	for (int i =0 ; i< Closeness.size(); i++)
 		cout<<Closeness[i]<<endl;
 	
+	ofstream myfile;
+	myfile.open ("Output.txt");
+	for (int i =0 ; i< Closeness.size(); i++)
+		myfile << Closeness[i]<<endl;
+	
+	myfile.close();
+
 	cout<<endl;
 	return 0;
 } 

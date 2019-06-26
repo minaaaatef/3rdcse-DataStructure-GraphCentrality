@@ -7,7 +7,7 @@ class Graph
 private:
 	vector<vector<pair<int, int> > > adj_list;
 	int num_nodes , num_edges;
-	vector<int> Graph :: shortest_distance(int src,vector<vector<pair<int,int> > > adj_list);
+	vector<int> shortest_distance(int src,vector<vector<pair<int,int> > > adj_list);
 
 public:
 	Graph(int num_nodes,int num_edges);
