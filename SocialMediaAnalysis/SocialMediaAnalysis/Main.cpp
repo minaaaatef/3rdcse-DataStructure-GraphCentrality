@@ -71,7 +71,14 @@ int main () {
 		cout<<Closeness[i]<<endl;
 	
 	ofstream myfile;
-	myfile.open ("Output.txt");
+
+	myfile.open ("Degree.txt");
+	for (int i =0 ; i< Degrees.size(); i++)
+		myfile << Degrees[i]<<endl;
+	
+	myfile.close();
+
+	myfile.open ("Closeness.txt");
 	for (int i =0 ; i< Closeness.size(); i++)
 		myfile << Closeness[i]<<endl;
 	
