@@ -43,7 +43,7 @@ int main () {
 	int n , m;
 	
 	//Graph G1
-	Graph *G1 = readFile("H:\\Nader 2014\\CSE_1stYear\\2nd Term \\Data Structure\\Project\\inputFile.txt",n,m);
+	Graph *G1 = readFile("inputFile.txt",n,m);
 	
 
 	//Displays the nodes connected to each node
