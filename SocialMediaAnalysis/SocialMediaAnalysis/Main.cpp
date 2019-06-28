@@ -45,31 +45,24 @@ int main () {
 	//Graph G1
 	Graph *G1 = readFile("inputFile.txt",n,m);
 	
-
-	//Displays the nodes connected to each node
-	for (int i=0; i< n; i++){
-		cout<<"The nodes directly connected to node "<<i<<" are: ";
-		for(int j=0; j<G1->Get_AdjList()[i].size(); j++){
-			cout<<"(node: "<<G1->Get_AdjList()[i][j].first<<" , weight: "<<G1->Get_AdjList()[i][j].second<<") "<<endl;
-		}
-		cout<<"\n";
-	}
-	
-	
 	vector<int> Degrees (n);
 	Degrees = G1->Degree_Centrality();
 	
+	cout <<"Degree Centrality"<<"\n"<<"Start"<<"\n";
 	for (auto i : Degrees)
-		cout<<Degrees[i]<<endl;
-	
-	cout<<endl;
+		cout<<Degrees[i]<<"\n";
+	cout<<"Stop";
+	cout<<"\n";
 
 	vector<float> Closeness (n);
 	Closeness = G1->Closeness_Centrality();
 
-	for (int i =0 ; i< Closeness.size(); i++)
-		cout<<Closeness[i]<<endl;
 	
+	cout <<"Closeness Centrality"<<"\n"<<"Start"<<"\n";
+	for (int i =0 ; i< Closeness.size(); i++)
+		cout<<Closeness[i]<<"\n";
+	cout<<"Stop";
+	cout<<"\n";
 	ofstream myfile;
 
 	myfile.open ("Degree.txt");
