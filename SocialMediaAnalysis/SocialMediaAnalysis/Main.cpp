@@ -47,15 +47,18 @@ int main () {
 	
 	vector<int> Degrees (n);
 	Degrees = G1->Degree_Centrality();
-	
+
+	vector<float> Closeness (n);
+	Closeness = G1->Closeness_Centrality();
+
+	vector<float> Betweenness (n);
+	Betweenness = G1->Betweenness_Centrality();
+
 	cout <<"Degree Centrality"<<"\n"<<"Start"<<"\n";
 	for (auto i : Degrees)
 		cout<<Degrees[i]<<"\n";
 	cout<<"Stop";
 	cout<<"\n";
-
-	vector<float> Closeness (n);
-	Closeness = G1->Closeness_Centrality();
 
 	
 	cout <<"Closeness Centrality"<<"\n"<<"Start"<<"\n";
@@ -63,6 +66,13 @@ int main () {
 		cout<<Closeness[i]<<"\n";
 	cout<<"Stop";
 	cout<<"\n";
+
+	cout <<"Betweenness Centrality"<<"\n"<<"Start"<<"\n";
+	for (int i =0 ; i< Betweenness.size(); i++)
+		cout<<Betweenness[i]<<"\n";
+	cout<<"Stop";
+	cout<<"\n";
+
 	ofstream myfile;
 
 	myfile.open ("Degree.txt");
@@ -74,6 +84,12 @@ int main () {
 	myfile.open ("Closeness.txt");
 	for (int i =0 ; i< Closeness.size(); i++)
 		myfile << Closeness[i]<<endl;
+	
+	myfile.close();
+
+	myfile.open ("Betweenness.txt");
+	for (int i =0 ; i< Betweenness.size(); i++)
+		myfile << Betweenness[i]<<endl;
 	
 	myfile.close();
 
