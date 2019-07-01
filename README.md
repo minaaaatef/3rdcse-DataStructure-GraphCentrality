@@ -8,6 +8,7 @@ The project aims at applying algorithms based on graph theory to compute the cen
 - [x] Creat The Repo
 - [x] Degree Centrality
 - [x] Closeness centrality
+- [x] Betweenness centrality
 - [ ] C++ Visualization 
 - [ ] Python Visualization
 
