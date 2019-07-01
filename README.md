@@ -6,6 +6,10 @@ The project aims at applying algorithms based on graph theory to compute the cen
 
 ### Tasks
 - [x] Creat The Repo
-- [ ] Degree Centrality
-- [ ] Closeness centrality
-- [ ] Graph Visualization
+- [x] Degree Centrality
+- [x] Closeness centrality
+- [ ] C++ Visualization 
+- [ ] Python Visualization
+
+
+### Python 
