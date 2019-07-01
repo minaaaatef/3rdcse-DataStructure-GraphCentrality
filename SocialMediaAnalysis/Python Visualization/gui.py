@@ -45,7 +45,7 @@ class Window(QtGui.QMainWindow):
         name = QtGui.QFileDialog.getOpenFileName(self, 'Open File')
         copyfile(name, 'inputFile.txt')
         p = open('output.txt','w')
-        subprocess.check_call([r"Debug/SocialMediaAnalysis.exe"],stdout=p)
+        subprocess.check_call([r"SocialMediaAnalysis.exe"],stdout=p)
         algorithm = 0
         algor_1  = "Degree Centrality"
         algor_1_list = []
