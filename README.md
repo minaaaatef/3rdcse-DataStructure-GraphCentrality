@@ -12,4 +12,8 @@ The project aims at applying algorithms based on graph theory to compute the cen
 - [ ] Python Visualization
 
 
-### Python 
+## Python Requirements
+#### pyvis 
+```
+pip install pyvis
+```
