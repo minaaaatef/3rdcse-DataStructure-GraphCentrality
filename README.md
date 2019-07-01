@@ -9,7 +9,7 @@ The project aims at applying algorithms based on graph theory to compute the cen
 - [x] Degree Centrality
 - [x] Closeness centrality
 - [x] Betweenness centrality
-- [ ] C++ Visualization 
+- [x] C++ Visualization 
 - [ ] Python Visualization
 
 
