@@ -9,7 +9,7 @@ The project aims at applying algorithms based on graph theory to compute the cen
 - [x] Degree Centrality
 - [x] Closeness centrality
 - [ ] C++ Visualization 
-- [ ] Python Visualization
+- [x] Python Visualization
 
 
 ## Python Requirements
@@ -17,3 +17,8 @@ The project aims at applying algorithms based on graph theory to compute the cen
 ```
 pip install pyvis
 ```
+#### pyqt4
+- Install The appropriate package from here
+[pyqt4 wheel package](https://pypi.org/simple/pyqt4-windows-whl/)
+
+
